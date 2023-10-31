@@ -11,7 +11,3 @@
 
 - name: "Configure docker"
   include: configure.yml
-
-- name: "Install compose"
-  pip: name="docker-compose" state="present" version="{{ docker_compose_version }}"
-  when: docker_compose_version != ""
